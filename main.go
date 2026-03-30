@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"my-ls-1/cmd"
+	"my-ls-1/internal/flags"
+)
 
-
-func main(){
-	fmt.Println("My-ls-1")
+func main() {
+	f, paths := flags.Parse()
+	cmd.Run(f, paths)
 }
