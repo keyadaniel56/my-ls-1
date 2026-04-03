@@ -1,9 +1,10 @@
 package flags
 
 import (
-	"my-ls-1/internal/models"
 	"os"
 	"strings"
+
+	"my-ls-1/internal/models"
 )
 
 func Parse() (models.Flags, []string) {
@@ -22,8 +23,12 @@ func Parse() (models.Flags, []string) {
 					f.All = true
 				case 'r':
 					f.Reverse = true
+				case 't':
+					f.SortTime = true
 				case 'R':
 					f.Recursive = true
+				case '1':
+					f.OnePerLine = true
 				}
 			}
 		} else {
