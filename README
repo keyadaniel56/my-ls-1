@@ -32,7 +32,8 @@ go run . flags
 -a
 -r
 -t
-``
+```
+
 - Note that you can use various flags, in various ways, just like in `ls`.
 
 - When it comes to the `ls -l` display, it must be identical to the system command.
@@ -68,4 +69,5 @@ This project will help you learn about :
 - Ways to receive data.
 - Ways to output data.
 - Manipulation of strings.
-- Manipulation of structures
+- Manipulation of structures.
+
